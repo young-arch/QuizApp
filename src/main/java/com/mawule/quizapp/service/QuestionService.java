@@ -34,9 +34,9 @@ public class QuestionService {
         return new ResponseEntity<>(new ArrayList<>(),HttpStatus.BAD_REQUEST);
     }
 
-    public ResponseEntity<String> addquestion(Question question) {
+    public ResponseEntity<String> addquestion(Question questions) {
         try {
-            questionDao.save(question);
+            questionDao.save(questions);
             return new ResponseEntity<>("success", HttpStatus.CREATED);
         }catch (Exception e){
             e.printStackTrace();
@@ -45,9 +45,9 @@ public class QuestionService {
 
     }
 
-    public ResponseEntity<String> deletequestion(Question question){
+    public ResponseEntity<String> deletequestion(Question questions){
         try {
-            questionDao.delete(question);
+            questionDao.delete(questions);
             return new ResponseEntity<>("success", HttpStatus.ACCEPTED);
         }catch (Exception e){
             e.printStackTrace();

@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@RequestMapping("question")
+@RequestMapping("questions")
 public class QuestionController{
     @Autowired
     QuestionService questionService;

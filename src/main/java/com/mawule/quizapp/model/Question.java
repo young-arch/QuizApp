@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.*;
 import lombok.Data;
-@Table(name = "question")
+@Table(name = "questions")
 @Data
 @Entity
 public class Question{
