@@ -36,11 +36,6 @@ To get started with QuizApp Backend, follow these simple steps:
 
 ## API Endpoints
 
-- **Create a Question:**
-  ```http
-  POST /question/add
-  ```
-
 - **Get All Questions:**
   ```http
   GET /question/allQuestions
@@ -51,6 +46,10 @@ To get started with QuizApp Backend, follow these simple steps:
   GET /question/category/{category}
   ```
 
+- **Create a Question:**
+  ```http
+  POST /question/add
+  ```
 ## Leaderboard
 
 - **Get Leaderboard:**
